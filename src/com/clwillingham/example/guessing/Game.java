@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Game {
 
-    public static final int MAX_NUMBER = 1000;
+    public static final int MAX_NUMBER = 10000;
 
     private boolean isRunning = true;
 
@@ -20,7 +20,8 @@ public class Game {
 
         Player[] players = new Player[]{
                 new HumanPlayer("Player 1", scanner),
-                new RobotPlayer("Robot 1")
+                new RobotPlayer("Robot 1"),
+                new SmartBotPlayer("Robot 2")
         };
         Game game = new Game(MAX_NUMBER, players);
         while(game.isRunning()){
